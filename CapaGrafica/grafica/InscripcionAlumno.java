@@ -3,6 +3,8 @@ package grafica;
 import java.awt.EventQueue;
 
 import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
 
 public class InscripcionAlumno extends JInternalFrame {
 
@@ -29,6 +31,9 @@ public class InscripcionAlumno extends JInternalFrame {
 	 */
 	public InscripcionAlumno() {
 		setBounds(100, 100, 450, 300);
+		
+		JLabel lblNewLabel = new JLabel("Soy un label");
+		getContentPane().add(lblNewLabel, BorderLayout.WEST);
 
 	}
 
