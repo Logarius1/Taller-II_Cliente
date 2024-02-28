@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Recursos/background.jpg</name>
+			<type>1</type>
+			<location>C:/Users/crist/git/Taller-II_Cliente/Recursos/background.jpg</location>
+		</link>
+	</linkedResources>
 </projectDescription>

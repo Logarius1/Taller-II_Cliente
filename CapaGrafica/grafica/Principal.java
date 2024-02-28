@@ -46,29 +46,53 @@ public class Principal extends JFrame {
 		JMenu mnNewMenu = new JMenu("Asignaturas");
 		menuBar.add(mnNewMenu);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("Registro de Asignatura");
-		mnNewMenu.add(mntmNewMenuItem);
+		JMenuItem miRegistroAsignatura = new JMenuItem("Registro de asignatura");
+		mnNewMenu.add(miRegistroAsignatura);
 		
-		JMenuItem mntmNewMenuItem_1 = new JMenuItem("");
-		mnNewMenu.add(mntmNewMenuItem_1);
+		JMenuItem miInscripcionAsignatura = new JMenuItem("Inscripción a asignatura");
+		mnNewMenu.add(miInscripcionAsignatura);
 		
 		JMenu mnNewMenu_1 = new JMenu("Alumnos");
 		menuBar.add(mnNewMenu_1);
 		
-		JMenuItem mntmNewMenuItem_2 = new JMenuItem("Registro de alumno");
-		mnNewMenu_1.add(mntmNewMenuItem_2);
+		JMenuItem miRegistroAlumno = new JMenuItem("Registro de alumno");
+		mnNewMenu_1.add(miRegistroAlumno);
 		
-		JMenuItem mntmNewMenuItem_4 = new JMenuItem("");
-		mnNewMenu_1.add(mntmNewMenuItem_4);
+		JMenuItem miRegistroResultado = new JMenuItem("Registro de resultado");
+		mnNewMenu_1.add(miRegistroResultado);
+		
+		JMenuItem miRecaudadoInscripciones = new JMenuItem("Recaudado por inscripciones");
+		mnNewMenu_1.add(miRecaudadoInscripciones);
 		
 		JMenu mnNewMenu_2 = new JMenu("Listados");
 		menuBar.add(mnNewMenu_2);
 		
+		JMenuItem miListadoAsignaturas = new JMenuItem("Asignaturas");
+		mnNewMenu_2.add(miListadoAsignaturas);
+		
+		JMenuItem miListadoAlumnos = new JMenuItem("Alumnos");
+		mnNewMenu_2.add(miListadoAlumnos);
+		
+		JMenuItem miDetalleAlumno = new JMenuItem("Detalle alumno");
+		mnNewMenu_2.add(miDetalleAlumno);
+		
+		JMenuItem miListadoEscolaridad = new JMenuItem("Escolaridad");
+		mnNewMenu_2.add(miListadoEscolaridad);
+		
+		JMenuItem miListadoEgresados = new JMenuItem("Egresados");
+		mnNewMenu_2.add(miListadoEgresados);
+		
 		JMenu mnNewMenu_3 = new JMenu("Opciones");
 		menuBar.add(mnNewMenu_3);
 		
+		JMenuItem miRespaldarDatos = new JMenuItem("Respaldar datos");
+		mnNewMenu_3.add(miRespaldarDatos);
+		
 		JMenu mnNewMenu_4 = new JMenu("Ayuda");
 		menuBar.add(mnNewMenu_4);
+		
+		JMenuItem miAcercaDe = new JMenuItem("Acerca de Moda fashionista");
+		mnNewMenu_4.add(miAcercaDe);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -80,7 +104,7 @@ public class Principal extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\crist\\OneDrive\\Escritorio\\image.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("Recursos/background.jpg"));
 		lblNewLabel.setBounds(0, 0, 564, 800);
 		panel.add(lblNewLabel);
 	}
