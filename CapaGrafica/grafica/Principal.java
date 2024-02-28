@@ -11,6 +11,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Principal extends JFrame {
 
@@ -39,15 +41,14 @@ public class Principal extends JFrame {
 	public Principal() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 590, 850);
+		this.setSize(580, 850);
+		this.setResizable(false);
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
 		JMenu mnNewMenu = new JMenu("Asignaturas");
 		menuBar.add(mnNewMenu);
-		
-		JMenuItem miRegistroAsignatura = new JMenuItem("Registro de asignatura");
-		mnNewMenu.add(miRegistroAsignatura);
 		
 		JMenuItem miInscripcionAsignatura = new JMenuItem("Inscripción a asignatura");
 		mnNewMenu.add(miInscripcionAsignatura);
@@ -107,5 +108,16 @@ public class Principal extends JFrame {
 		lblNewLabel.setIcon(new ImageIcon("Recursos/background.jpg"));
 		lblNewLabel.setBounds(0, 0, 564, 800);
 		panel.add(lblNewLabel);
+		
+		JMenuItem miRegistroAsignatura = new JMenuItem("Registro de asignatura");
+		miRegistroAsignatura.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				RegistrarAsignatura ra = new RegistrarAsignatura();
+				ra.setVisible(true);
+			}
+		});
+		
+		mnNewMenu.add(miRegistroAsignatura);
+		
 	}
 }
