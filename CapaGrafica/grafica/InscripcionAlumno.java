@@ -19,7 +19,7 @@ public class InscripcionAlumno extends JInternalFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField textField_5;
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private JTextField textField_4;
@@ -44,69 +44,64 @@ public class InscripcionAlumno extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public InscripcionAlumno() {
+		setTitle("Inscripcion Alumno");
 		getContentPane().setBackground(new Color(210, 180, 140));
-		setBounds(100, 100, 292, 286);
+		setBounds(100, 100, 298, 264);
 		getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Cédula");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel.setBounds(10, 46, 48, 14);
+		lblNewLabel.setBounds(10, 29, 51, 24);
 		getContentPane().add(lblNewLabel);
 		
 		textField = new JTextField();
-		textField.setBounds(80, 44, 194, 23);
+		textField.setBounds(80, 23, 194, 30);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNombre = new JLabel("Nombre");
 		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNombre.setBounds(10, 72, 60, 14);
+		lblNombre.setBounds(10, 54, 65, 30);
 		getContentPane().add(lblNombre);
 		
 		JLabel lblApellido = new JLabel("Apellido");
 		lblApellido.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblApellido.setBounds(10, 97, 60, 20);
+		lblApellido.setBounds(10, 85, 60, 28);
 		getContentPane().add(lblApellido);
 		
 		JLabel lblDomicilio = new JLabel("Domicilio");
 		lblDomicilio.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblDomicilio.setBounds(10, 128, 60, 17);
+		lblDomicilio.setBounds(10, 117, 65, 24);
 		getContentPane().add(lblDomicilio);
 		
 		JLabel lblTelfono = new JLabel("Teléfono");
 		lblTelfono.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblTelfono.setBounds(10, 156, 60, 17);
+		lblTelfono.setBounds(10, 148, 65, 25);
 		getContentPane().add(lblTelfono);
 		
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.setBackground(new Color(211, 211, 211));
-		btnNewButton.setBounds(92, 205, 96, 23);
+		btnNewButton.setBounds(92, 188, 96, 23);
 		getContentPane().add(btnNewButton);
 		
-		JLabel lblNewLabel_1 = new JLabel("Inscripción Alumno");
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel_1.setBounds(10, 11, 232, 21);
-		getContentPane().add(lblNewLabel_1);
-		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(80, 71, 194, 23);
-		getContentPane().add(textField_1);
+		textField_5 = new JTextField();
+		textField_5.setColumns(10);
+		textField_5.setBounds(80, 54, 194, 30);
+		getContentPane().add(textField_5);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(80, 99, 194, 23);
+		textField_2.setBounds(80, 85, 194, 30);
 		getContentPane().add(textField_2);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(80, 127, 194, 23);
+		textField_3.setBounds(80, 116, 194, 30);
 		getContentPane().add(textField_3);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(80, 155, 194, 23);
+		textField_4.setBounds(80, 147, 194, 30);
 		getContentPane().add(textField_4);
 
 	}

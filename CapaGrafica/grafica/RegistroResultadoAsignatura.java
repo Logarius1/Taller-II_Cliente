@@ -3,19 +3,19 @@ package grafica;
 import java.awt.EventQueue;
 
 import javax.swing.JInternalFrame;
+import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;
 import java.awt.Font;
-import java.awt.Color;
 import javax.swing.JTextField;
-import javax.swing.JTextArea;
 import javax.swing.JButton;
 
-public class RegistrarAsignatura extends JInternalFrame {
+public class RegistroResultadoAsignatura extends JInternalFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JTextField textField;
 	private JTextField textField_1;
+	private JTextField textField_2;
 
 	/**
 	 * Launch the application.
@@ -24,7 +24,7 @@ public class RegistrarAsignatura extends JInternalFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					RegistrarAsignatura frame = new RegistrarAsignatura();
+					RegistroResultadoAsignatura frame = new RegistroResultadoAsignatura();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,45 +36,47 @@ public class RegistrarAsignatura extends JInternalFrame {
 	/**
 	 * Create the frame.
 	 */
-	public RegistrarAsignatura() {
+	public RegistroResultadoAsignatura() {
 		getContentPane().setBackground(new Color(210, 180, 140));
-		setTitle("Registrar Asignatura");
-		setBounds(100, 100, 371, 224);
 		getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Código alfanumérico");
-		lblNewLabel.setBounds(10, 3, 128, 35);
+		JLabel lblNewLabel = new JLabel("Cédula");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel.setBounds(10, 11, 50, 31);
 		getContentPane().add(lblNewLabel);
 		
-		JLabel lblNombre = new JLabel("Nombre");
-		lblNombre.setBounds(10, 37, 128, 26);
-		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		getContentPane().add(lblNombre);
-		
-		JLabel lblDescripcion = new JLabel("Descripción");
-		lblDescripcion.setBounds(10, 64, 128, 26);
-		lblDescripcion.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		getContentPane().add(lblDescripcion);
-		
 		textField = new JTextField();
-		textField.setBounds(138, 9, 216, 26);
+		textField.setBounds(69, 16, 169, 24);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
+		JLabel lblNota = new JLabel("Nota");
+		lblNota.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNota.setBounds(10, 39, 50, 31);
+		getContentPane().add(lblNota);
+		
 		textField_1 = new JTextField();
-		textField_1.setBounds(138, 39, 216, 26);
 		textField_1.setColumns(10);
+		textField_1.setBounds(69, 44, 169, 24);
 		getContentPane().add(textField_1);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setBounds(138, 68, 216, 77);
-		getContentPane().add(textArea);
+		JLabel lblNmero = new JLabel("Número");
+		lblNmero.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNmero.setBounds(10, 69, 50, 31);
+		getContentPane().add(lblNmero);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(69, 74, 169, 24);
+		getContentPane().add(textField_2);
 		
 		JButton btnNewButton = new JButton("Aceptar");
 		btnNewButton.setBackground(new Color(211, 211, 211));
-		btnNewButton.setBounds(138, 168, 89, 23);
+		btnNewButton.setBounds(79, 109, 89, 23);
 		getContentPane().add(btnNewButton);
+		setTitle("Registro de resultado de una asignatura");
+		setBounds(100, 100, 257, 174);
 
 	}
+
 }
